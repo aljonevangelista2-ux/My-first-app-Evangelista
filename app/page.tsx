@@ -1,25 +1,39 @@
+
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold">
-        Hello, my name is John Patrick.
-      </h1>
+    <main className="mx-auto max-w-5xl px-6 py-16">
 
-      <p className="mt-4">
-        I am an IT student who enjoys learning
-        about programming and web development.
-        I want to improve my skills by creating
-        useful websites and applications.
-      </p>
+      <section className="rounded-2xl bg-white p-10 shadow-md">
 
-      <Link
-        href="/projects"
-        className="mt-4 inline-block underline"
-      >
-        See my projects
-      </Link>
+        <p className="mb-3 font-semibold text-blue-600">
+          WELCOME TO MY PERSONAL WEBSITE
+        </p>
+
+        <h1 className="mb-5 text-4xl font-bold md:text-5xl">
+          Hello, my name is John Patrick.
+        </h1>
+
+        <p className="mb-4 leading-relaxed text-gray-600">
+          I am an Information Technology student
+          interested in programming and web development.
+        </p>
+
+        <p className="mb-8 leading-relaxed text-gray-600">
+          I enjoy creating websites, learning new
+          technologies, and developing useful applications.
+        </p>
+
+        <Link
+          href="/projects"
+          className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
+        >
+          See my projects
+        </Link>
+
+      </section>
+
     </main>
   );
 }
