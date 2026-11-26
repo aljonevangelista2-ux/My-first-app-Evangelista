@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | John Patrick",
+  title: "Projects | Aljon Evangelista",
 };
 
 const projects = [
@@ -19,11 +19,11 @@ const projects = [
       "An online clothing store for browsing and purchasing products.",
   },
   {
-    id: 3,
-    name: "JobTrack",
-    description:
-      "An application for tracking job applications and interviews.",
-  },
+  id: 4,
+  name: "TaskFlow",
+  description:
+    "A task and project management system for organizing tasks, setting deadlines, and tracking progress.",
+},
 ];
 
 export default function ProjectsPage() {
